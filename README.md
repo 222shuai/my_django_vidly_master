@@ -3,9 +3,9 @@
 #### 介绍
 django实例练习之vidly
 
-#"""本次实践基于mosh的python+django web快速入门教程"""
+# """本次实践基于mosh的python+django web快速入门教程"""
 
-##1.路由功能(urls)
+## 1.路由功能(urls)
 ###    1.1.为了在模板或其他组件能勾引用url模块，url的列表应当具有一定规范：
         app_name = 'movies'  # 设置app名称方便被引用
         # /movies/1
@@ -13,9 +13,9 @@ django实例练习之vidly
             path('', views.index, name='index'),
             path('<int:movie_id>', views.detail, name='detail')
         ]
-###2.admin(管理员)
-###3.models(模型)
-###4.views(视图)
+### 2.admin(管理员)
+### 3.models(模型)
+### 4.views(视图)
 ####    4.1.访问的数据库对象不存在的处理实例：
             from django.shortcuts import render, get_object_or_404
             def detail(request, movie_id):
@@ -33,8 +33,8 @@ django实例练习之vidly
 #####        4.3.1.类似于其他app的views.py(视图)编写，返回对应的页面template(模板)即可，需要自行先在项目主目录(vidly)文件夹下新建一个views.py文件
 #####        4.3.2.注意由于默认的主目录vidly不是一个app，我们应当将主页模板放在主项目的template目录下，django会自动搜索。如果一定要将其模板文件放在vidly下，那么要在settings.py中的INSTALLED_APPS列表中像其他app一样配置上vidly，否则会找不到模板文件。
 
-###5.template(模板)
-###6.其他：
+### 5.template(模板)
+### 6.其他：
 ####    6.1.Django项目构建API(两种API框架可选)：
 #####        6.1.1.django-tastypie 0.14.2 --> pip install django-tastypie
                 简介：属于beta版本，但实际上诞生于2010年，并且已经在多个网站被用于生产
