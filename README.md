@@ -4,6 +4,7 @@
 django实例练习之vidly
 
 #"""本次实践基于mosh的python+django web快速入门教程"""
+
 ##1.路由功能(urls)
 ###    1.1.为了在模板或其他组件能勾引用url模块，url的列表应当具有一定规范：
         app_name = 'movies'  # 设置app名称方便被引用
